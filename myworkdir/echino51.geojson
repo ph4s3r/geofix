@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [529, 63],
+            [529, 44800],
+            [35840, 44800],
+            [35840, 63],
+            [529, 63]
+          ]
+        ]
+      },
+      "properties": {
+        "object_type": "annotation",
+        "classification": {
+          "name": "Tumor",
+          "colorRGB": -16770432
+        },
+        "isLocked": false
+      }
+    }
+  ]
+}
