@@ -2,6 +2,9 @@
 
 Author: Peter Karacsonyi
 
+Usage: python geofix.py <path>
+where <path> is a folder where target files with .geojson extension are stored
+
 """
 
 import sys, os
@@ -21,7 +24,7 @@ if not mypath.exists():
 
 print(f"enumerating files in path {mypath.resolve()}: \n")
 for idx, file in enumerate(mypath.glob("*")):
-    if 'geojson' in file:
+    if 'geojson' in str(file):
         filelist.append(file)
 
 for file in filelist:
